@@ -13,12 +13,18 @@ int main()
 	cout << "Put the two numbers you're trying to add seperated by a space: " << endl;
 	cin >> x >> y;
 	double z = x + y;
-	cout << "Press enter to see the answer.\n";
+	double stuAnswer;
+	cout << "What is your answer?\n";
+	cin >> stuAnswer;
 
-	cin.ignore();
-	cin.get();
+		if (stuAnswer == z) {
+			cout << "\nYou are correct!" << endl;
+		}
+		else {
+			cout << "\nYou are incorrect." << endl;
+		}
 
-		cout << "The answer is: " << z << endl;
+		cout << "\nThe answer is: " << z << endl;
 
 		return 0;
 }
